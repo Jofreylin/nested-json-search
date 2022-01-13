@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <input id="inputGroupFile06" (input)="buscar($event)" type="text"
+            value="" class="form-control bg-light" placeholder="Palabra clave..." />
+        </div>
+        
+        <br>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>TYPE</th>
+                        <th>NAME</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr *ngFor="let item of objects">
+                        <td>{{item.id}}</td>
+                        <td>{{item.type}}</td>
+                        <td>{{item.name}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+    
+</div>
+
